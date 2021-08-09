@@ -1,0 +1,11 @@
+<h1><%= @flat['name'] %></h1>
+<h3>Details about this flat</h3>
+
+<ul>
+  <li><%= @flat['price'] %> <%= @flat['priceCurrency'] %></li>
+  <li>Coordinates: <%= @flat['lat'] %> <%= @flat['lng'] %></li>
+</ul>
+
+<%= image_tag @flat['imageUrl'], alt: @flat['name']  %>
+
+
